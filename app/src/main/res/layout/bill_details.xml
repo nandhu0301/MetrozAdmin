@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="80dp"
+                android:text="Settlement Details"
+                android:textColor="@color/cyanbase"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/Cancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#8B1F80"
+                android:src="@drawable/ic_cancelicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_below="@+id/bill_Number_text"
+                android:layout_marginTop="5dp"
+                android:text="Bill Number"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_below="@+id/bill_Number_text"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:text="Bill Amount"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="0dp"
+            android:background="@null"
+            android:id="@+id/billetailslist" />
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_below="@+id/bill_Number_text"
+                android:layout_marginTop="5dp"
+                android:text="Total Billed Amount"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:paddingRight="5dp"
+                android:layout_below="@+id/bill_Number_text"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="#000000"
+                android:id="@+id/totalAmountInfo"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:padding="5dp"
+                        android:background="@drawable/b_round"
+                        android:backgroundTint="@color/cyanbase"
+                        android:textColor="@color/white"
+                        android:id="@+id/uploadReceipt"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="35dp"
+                        android:gravity="center"
+                        android:text="Upload Receipt" />
+
+
+                    <ImageView
+                        android:id="@+id/receiptImageview"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_baseline_image_24" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+                    <Button
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:background="@drawable/b_round"
+                        android:backgroundTint="@color/cyanbase"
+                        android:textColor="@color/white"
+                        android:id="@+id/changePaymentStatusButton"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="35dp"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:text="Change Payment Status" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/gradient">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Add Category"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/Cancel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/textheader"
+                    android:backgroundTint="#FFFFFF"
+                    android:src="@drawable/cancel" />
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/header"
+                android:id="@+id/prioritygrid"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/drawable_spinner_border"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_gravity="top|center">
+
+                    <Spinner
+                        android:id="@+id/categoryPrioritySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:spinnerMode="dropdown"
+                        android:backgroundTint="@null"
+                        android:overlapAnchor="false"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="-2dp"
+                        android:background="#FFFFFF"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:textSize="10dp"
+                        android:text="Select Category Priority"
+                        android:textColor="@color/black" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="0dp"
+                android:layout_below="@+id/prioritygrid"
+                android:id="@+id/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    >
+
+                    <EditText
+                        android:id="@+id/catagoryname_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="Category Name"
+                        android:inputType="textCapCharacters"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="0dp"
+                android:layout_below="@+id/edittext"
+                android:id="@+id/minimumcartvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    >
+
+                    <EditText
+                        android:id="@+id/minimumcartvalue_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="Minimum Cart Value"
+                        android:digits="0123456789"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="0dp"
+                android:layout_below="@+id/minimumcartvalue"
+                android:id="@+id/deliverycharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black">
+
+                    <EditText
+                        android:id="@+id/deliverycharge_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:digits="0123456789"
+                        android:hint="Delivery Charge"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/deliverycharge"
+                android:id="@+id/result"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+
+                    >
+                    <EditText
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:id="@+id/addminimumdistancedelivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Normal distance delivery"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:digits="0123456789"
+                        android:textSize="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/result"
+                android:id="@+id/result1"
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+
+                    >
+                    <EditText
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:id="@+id/addlongdistancedelivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Long distance delivery"
+                        android:inputType="number"
+                        android:digits="0123456789"
+                        android:maxLength="3"
+                        android:textSize="16dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/result1"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:background="@drawable/b_round"
+                    android:backgroundTint="@color/cyanbase"
+                    android:id="@+id/catgory_image_button_dialog"
+                    android:layout_width="220dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Pick Category Image"
+                    android:textColor="@color/White" />
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/catagoryImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/catgory_image_button_dialog"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/b_chooseimage"
+
+                    />
+
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:id="@+id/progressbar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:background="@drawable/b_round"
+                    android:backgroundTint="@color/cyanbase"
+
+                    android:layout_gravity="center"
+                    android:id="@+id/addCatagory_dialog"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/catagoryImage"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Add Category"
+                    android:textColor="@color/White" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

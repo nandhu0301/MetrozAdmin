@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:background="@color/cyanbase"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Update Category"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/textheader"
+                android:id="@+id/Cancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/cancel"
+                android:backgroundTint="#FFFFFF"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/header"
+            android:id="@+id/edittext"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+
+                >
+                <EditText
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:id="@+id/updatecatagoryname_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Catagory Name"
+                    android:inputType="textCapCharacters"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/edittext"
+            android:id="@+id/minimumcartvalue"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+
+                >
+                <EditText
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:id="@+id/updateminimumcartvalue_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Minimum Cart Value"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/minimumcartvalue"
+            android:id="@+id/deliverycharge"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+
+                >
+                <EditText
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:id="@+id/updatedeliverycharge_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Delivery Charge"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/deliverycharge"
+            android:id="@+id/result"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+
+                >
+                <EditText
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:id="@+id/updateminimumdistancedelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Normal distance delivery"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/result"
+            android:id="@+id/result1"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+
+                >
+                <EditText
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    android:id="@+id/updatelongdistancedelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Long distance delivery"
+                    android:inputType="number"
+                    android:digits="0123456789"
+                    android:textSize="16dp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/result1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:layout_gravity="center"
+                android:id="@+id/updatecatgory_pickimage_button_dialog"
+                android:layout_margin="10dp"
+
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="Pick Category Image"
+                />
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/updatecatagoryImage"
+                android:layout_below="@+id/updatecatgory_pickimage_button_dialog"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/b_chooseimage"
+
+                />
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:backgroundTint="@color/black"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressUpdate"/>
+
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:layout_gravity="center"
+                android:id="@+id/updateaddCatagory_dialog"
+                android:layout_centerInParent="true"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatecatagoryImage"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="20dp"
+                android:text="Update Category"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboardicon_01"
+            android:title="DashBoard" />
+        <item
+            android:id="@+id/ApproveSellers"
+            app:actionLayout="@layout/menu_counter"
+            android:icon="@drawable/ic_approveseller"
+            android:title="Approve Store Partner" />
+        <item
+            app:actionLayout="@layout/menu_counter"
+            android:id="@+id/ApproveDeliveryBoys"
+            android:icon="@drawable/ic_approvedeliveryboy"
+            android:title="Approve Delivery Partner" />
+        <item
+            app:actionLayout="@layout/menu_counter"
+            android:id="@+id/Approve_items_id"
+            android:title="Approve Items"
+            android:icon="@drawable/itemapprove"/>
+        <item
+            android:id="@+id/AssignOrders"
+            android:icon="@drawable/ic_assignorders"
+            android:title="Assign Orders for delivery" />
+
+        <item
+            android:id="@+id/View_Orders_id"
+            android:icon="@drawable/ic_vieworders"
+            android:title="View Orders and Add Coupon" />
+        <item
+            android:id="@+id/Add_Discounts_id"
+            android:icon="@drawable/ic_add_discounts"
+            android:title="Maintain Offers" />
+
+        <item
+            android:id="@+id/Add_Advertisment_id"
+            android:icon="@drawable/ic_add_adv"
+            android:title="Add Advertisements" />
+        <item
+            android:id="@+id/viewadvertisement"
+            android:icon="@drawable/ic_viewadvertisements"
+            android:title="View Advertisements" />
+
+        <item
+            android:id="@+id/category"
+            android:icon="@drawable/ic_categories_svg"
+            android:title="Maintain Categories"/>
+        <item
+            android:id="@+id/subcategory"
+            android:icon="@drawable/ic_subcategory_svg"
+            android:title="Maintain Sub Categories" />
+
+        <item
+            android:id="@+id/bulkupload"
+            android:icon="@drawable/ic_bulkupload"
+            android:title="Bulk Upload" />
+        <item
+            android:id="@+id/Add_tips_id"
+            android:icon="@drawable/ic_addtips"
+            android:title="Maintain Tips" />
+
+        <item
+            android:id="@+id/Add_Delivery_Fair"
+            android:icon="@drawable/del"
+            android:title="Maintain Delivery Fare" />
+
+        <item
+            android:id="@+id/storeHistory"
+            android:icon="@drawable/ic_storehistory_01"
+            android:title="Store History" />
+        <item
+            android:id="@+id/deliveryBoyHistory"
+            android:icon="@drawable/ic_deliveryboyhistory"
+            android:title="Delivery Boy History" />
+        <item
+            android:id="@+id/uploadcontactdetails"
+            android:icon="@drawable/ic_contact"
+            android:title="Delivery Details" />
+        <item
+            android:id="@+id/adminWeeklyPayments"
+            android:icon="@drawable/ic_cashwallet_01"
+            android:title="Admin Weekly Settlements" />
+
+        <item
+            android:id="@+id/User_role_id"
+            android:icon="@drawable/ic_useradmin_svg"
+            android:title="User Administration" />
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/ic_contactus"
+            android:title="Contact Support" />
+
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/ic_logout_svg"
+            android:title="Logout" />
+    </group>
+</menu>

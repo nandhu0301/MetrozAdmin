@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:text="Other Category"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+     android:textColorHint="@color/cyanbase">
+
+                <EditText
+                    android:id="@+id/basefairedt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="₹ Minimum Fair"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cyanbase"
+            >
+
+                <EditText
+                    android:id="@+id/mainfairedt1"
+                    android:layout_width="match_parent"
+                    android:maxLength="3"
+                    android:layout_height="wrap_content"
+                    android:hint="₹ Per km"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:backgroundTint="@color/cyanbase"
+                android:id="@+id/cancelview"
+                android:background="@drawable/b_round"
+                android:text="Close"
+                android:textColor="#FFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/okview"
+                android:background="@drawable/b_round"
+                android:text="Add"
+                android:backgroundTint="@color/cyanbase"
+                android:textColor="#FFFF"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

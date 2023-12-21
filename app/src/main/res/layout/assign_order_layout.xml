@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Rel1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <TextView
+        android:id="@+id/assignstatus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Assign Status"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/White"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold">
+    </TextView>
+    <ImageView
+        android:layout_margin="4dp"
+        android:id="@+id/Cancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/cancel"
+        android:layout_alignParentRight="true"
+        android:visibility="visible">
+
+    </ImageView>
+    <ScrollView
+        android:layout_below="@+id/assignstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="left|bottom">
+            <EditText
+                android:textColor="@color/black"
+                android:focusable="false"
+                android:enabled="false"
+               android:hint="Order Number"
+                android:id="@+id/ordernumbertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="101"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="left|bottom"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="left|bottom">
+                <EditText
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:hint="Store Name"
+                android:id="@+id/storenametxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frio Icecreams"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="left|bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Placed Date:"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="left|bottom">
+                <EditText
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:hint="Placed Date"
+                android:id="@+id/placeddatetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02/04/1999"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="left|bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="left|bottom">
+                <EditText
+                    android:textColor="@color/black"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:hint="Status"
+                android:id="@+id/statustxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Created"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="left|bottom"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <TextView
+               android:paddingLeft="20dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assigned To:"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"
+                android:gravity="left|bottom"></TextView>
+
+            <Spinner
+                android:layout_margin="5dp"
+                android:id="@+id/assignedTospinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Created"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="30dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="left|bottom"></Spinner>
+
+
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/AssignRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:padding="6dp"
+                android:textColor="@color/White"
+                android:text="Assign Order"
+                android:gravity="center"
+                android:textSize="15dp"
+             >
+
+            </Button>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/gradient">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Add Sub-Category"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_margin="5dp"
+
+                android:id="@+id/Cancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textheader"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/cancel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/header"
+            android:id="@+id/prioritygrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/drawable_spinner_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="top|center"
+                >
+
+                <Spinner
+                    android:id="@+id/subcategoryPrioritySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:spinnerMode="dropdown"
+
+                    android:overlapAnchor="false"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="-3dp"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="Select Category"
+                    android:textColor="@color/black" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_below="@+id/prioritygrid"
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                >
+
+                <EditText
+                    android:id="@+id/subcatagoryname_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="sub Category Name"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:id="@+id/subcatgory_image_button_dialog"
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Pick Sub Category Image"
+                android:textColor="@color/White" />
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/subcatagoryImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/catgory_image_button_dialog"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/b_chooseimage"
+
+                />
+
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="@+id/progressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:layout_gravity="center"
+                android:id="@+id/addsubCatagory_dialog"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/catagoryImage"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="20dp"
+                android:text="Add Sub Category"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

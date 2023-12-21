@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">AdminUAT</string>
+    <string name="title_activity_user_role_creation">UserRoleCreationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string-array name="advertismentype_spinner">
+        <item>Select advertisement</item>
+        <item>Category Activity</item>
+        <item>Store Activity</item>
+        <item>Item Activity</item>
+
+    </string-array>
+
+
+    <string-array name="advertisement_price">
+        <item>Select advertisement Placing</item>
+        <item>Home Page Primary</item>
+        <item>Home Page Secondary</item>
+        <item>Store List Primary</item>
+        <item>Store List Secondary</item>
+        <!--<item>Items List Primary</item>
+        <item>Items List Secondary</item>
+        <item>View Cart Primary</item>-->
+        <item>View Cart Secondary</item>
+        <item>Order Summary Page Primary</item>
+        <item>Order Success Page Primary</item>
+        <!--<item>App Launch Pop up</item>
+        <item>Login Page</item>-->
+
+    </string-array>
+
+    <string-array name="advertisement_duration">
+        <item>Select advertisement duration</item>
+        <item>One Hour</item>
+        <item>One Day</item>
+        <item>One Week</item>
+    </string-array>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+
+    </array>
+
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="next">NEXT</string>
+
+    <string name="landline"> <u>+914524500081</u></string>
+    <string name="whatsapp"> <u>+918610226102</u></string>
+    <string name="website"> <u>www.smiligence.com</u></string>
+</resources>

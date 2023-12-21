@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="#FFFF"
+            android:layout_width="wrap_content"
+            android:text="Add Tips"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="#E10E6BF1">
+
+                <EditText
+                    android:textColor="@color/black"
+                    android:id="@+id/tipsname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter tip name"
+                    android:inputType="textPersonName"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:textColor="#E10E6BF1">
+
+                <EditText
+                    android:id="@+id/tipsamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter tip amount"
+                    android:inputType="number"
+                    android:digits="1234567890"
+                    android:maxLength="3"
+
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/tip_image"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="Choose image for tip"
+                android:gravity="center"
+android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/tipImageview"
+                android:layout_toRightOf="@+id/tip_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:hint="Choose image for tip"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/b_chooseimage"
+
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/cancelview"
+
+                android:text="Cancel"
+                android:textColor="#FFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/okview"
+                android:text="Add"
+                android:textColor="#FFFF"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

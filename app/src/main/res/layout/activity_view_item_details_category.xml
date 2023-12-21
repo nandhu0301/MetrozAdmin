@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/orderdetails_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/redirecttohome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:backgroundTint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Order Details"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/addDiscounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_couponicon_01"
+                android:text="Add Coupon" />
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/red_btn_bg_color"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="130dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_couponicon_01"
+            android:text="Add Discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderdetails_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/order_details_layout"
+                layout="@layout/orders_details_layout" />
+
+
+            <include
+                android:id="@+id/itemdetailslayoutheader"
+                layout="@layout/item_details_header" />
+
+            <include
+                android:id="@+id/itemdetailslayout"
+                layout="@layout/item_listview_layout" />
+
+            <include
+                android:id="@+id/payment_details"
+                layout="@layout/payment_details" />
+            <include
+                android:id="@+id/shipping_details_layout"
+                layout="@layout/shipping_details_layout" />
+
+            <include
+                android:id="@+id/cart_total_amount_layout"
+                layout="@layout/cart_total_amount_layout" />
+
+            <include
+                android:id="@+id/special_instructions"
+                layout="@layout/special_instruction_layout" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

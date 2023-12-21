@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/drawable/ic_cancelicon.xml" value="0.1" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/drawable/jsk.xml" value="0.1" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/action_bar.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_add_discounts.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_admin_contact_uploading.xml" value="0.11944444444444445" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_admin_weekly_payment.xml" value="0.3333333333333333" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_approve_sellers.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_bulk_upload.xml" value="0.13240740740740742" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_catagory.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_contact_us.xml" value="0.11481481481481481" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_dashboard.xml" value="0.2911392405063291" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_items_report_generation.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_login.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_maintain_delivery_fair.xml" value="0.13240740740740742" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_register.xml" value="0.10740740740740741" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_report_generation.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_seller_weekly_payment.xml" value="0.13240740740740742" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_splash.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_store_details.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_store_history.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_user_role.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_view_advertisement.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_view_discount.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/activity_view_store_based_items.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/add_advertisement.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/add_catagory_dialog.xml" value="0.14666666666666667" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/admin_details_card.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/advertisement_adapter.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/advertisement_dialog.xml" value="0.13148148148148148" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/assign_order_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/bill_details.xml" value="0.13240740740740742" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/bill_details_new.xml" value="0.13240740740740742" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/bill_info.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/catagory_grid.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/error_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/item_details_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/item_report_list.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/item_view.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/list_group_child.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/list_group_header.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/list_of_item_store.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/menu_counter.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/nav_header_main.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/payment_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/paymenttype_radio_layout.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/reason_for_suspension.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/seller_aadhar_dialog.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/seller_details.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/seller_paymentdetails_card.xml" value="0.13240740740740742" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/simplerow.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/layout/update_category_dialog.xml" value="0.16770833333333332" />
+        <entry key="..\:/New FTS Project/AdminUATLiveSuspend/app/src/main/res/menu/activity_main_drawer.xml" value="0.4466666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Payment Type"
+            android:textColor="#FFFF"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+
+
+                <RadioGroup
+                    android:id="@+id/groupradio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/prePaid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PrePaid"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/postPaid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PostPaid"
+                        android:textSize="15dp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/CancelAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:text="Close"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#FFFF" />
+
+            <Button
+                android:id="@+id/OkAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/b_round"
+                android:backgroundTint="@color/cyanbase"
+                android:text="Add"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#FFFF" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
